@@ -1,9 +1,3 @@
-<!-- navigation bar
-sub menu in about
-profile social link
-footer social photo
-pricing line text decoration -->
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -12,36 +6,59 @@ pricing line text decoration -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>oneder</title>
     <link rel="stylesheet" href="style.css">
-    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"> -->
-    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 </head>
 
 <body>
 
-    <header>
+    <header id="nav-home">
 
         <div class="container">
 
-            <nav>
-                <h1>ONEDER</h1>
+            <div class="menu-bar">
+                <div class="title">
+                    <h1><a href="#">ONEDER</a></h1>
+                </div>
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About us</a></li>
-                    <li><a href="#">portfolio</a></li>
-                    <li><a href="#">services</a></li>
-                    <li><a href="#">testimonials</a></li>
-                    <li><a href="#">blog</a></li>
-                    <li><a href="#">contact</a></li>
+                    <li class="active"><a href="#nav-home">Home</a></li>
+                    <li class="angle"><a href="#nav-about">About Us &nbsp;</a><i class="fa fa-angle-down" aria-hidden="true"></i>
+                        <div class="sub-menu-1">
+                            <ul>
+                                <li><a href="#nav-team">Team</a></li>
+                                <li><a href="#nav-pricing">Pricing</a></li>
+                                <li><a href="#nav-faqs">FAQS</a></li>
+                                <li class="hover-me"><a href="#">More Link</a><i class="fa fa-angle-right"
+                                        aria-hidden="true"></i>
+                                    <div class="sub-menu-2">
+                                        <ul>
+                                            <li><a href="#">Menu One</a></li>
+                                            <li><a href="#">Menu Two</a></li>
+                                            <li><a href="#">Menu Three</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="#nav-portfolio">Portfolio</a></li>
+                    <li><a href="#nav-services">Services</a></li>
+                    <li><a href="#nav-testimonials">Testimonials</a></li>
+                    <li><a href="#nav-blog">Blog</a></li>
+                    <li><a href="#nav-contact">Contact</a></li>
                 </ul>
-            </nav>
+            </div>
+
             <div class="content">
                 <h1>I'M CREATIVE ONE PAGE <br> TEMPLATE BY COLORLIB</h1>
-                <button class="btn">Get In Touch</button>
+                <button class="btn"><a href="#nav-contact">Get In Touch</a></button>
             </div>
         </div>
     </header>
-    <section class="about">
+
+    <section class="about" id="nav-about">
 
 
         <div class="about-heading">
@@ -61,92 +78,196 @@ pricing line text decoration -->
 
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa nobis suscipit voluptate minima
                     assumenda, enim eveniet.</p>
-                <p>** Lorem ipsum dolor sit.</p>
-                <p>** Lorem ipsum dolor sit amet.</p>
-                <p>** Lorem ipsum dolor sit amet consectetur.</p>
-                <p>** Lorem ipsum dolor sit.</p>
+                <p><i class="fa fa-check" aria-hidden="true"></i> Lorem ipsum dolor sit.</p>
+                <p><i class="fa fa-check" aria-hidden="true"></i> Lorem ipsum dolor sit amet.</p>
+                <p><i class="fa fa-check" aria-hidden="true"></i> Lorem ipsum dolor sit amet consectetur.</p>
+                <p><i class="fa fa-check" aria-hidden="true"></i> Lorem ipsum dolor sit.</p>
 
-                <button class="about-btn">Get In Touch</button>
+                <button class="about-btn"><a href="#nav-contact">Get In Touch</a></button>
 
             </div>
         </div>
         </div>
     </section>
 
-    <section class="our-team">
+    <section class="our-team" id="nav-team">
 
         <div class="team-container">
             <h1>Our Team</h1>
             <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus minima neque tempora reiciendis.</h4>
 
             <div class="team-row">
-                <div class="col-md-3  profile text-cente">
+                <div class="col-md-3  profile">
                     <div class="team-img-box">
                         <img src="images/person_5.jpg" height="300px" alt="person_5 ">
-
+                        <ul>
+                            <a href="#">
+                                <li><i class="fab fa-facebook-f"></i></li>
+                            </a>
+                            <a href="#">
+                                <li><i class="fab fa-twitter"></i></li>
+                            </a>
+                            <a href="#">
+                                <li><i class="fab fa-linkedin"></i></li>
+                            </a>
+                            <a href="#">
+                                <li><i class="fab fa-instagram"></i></li>
+                            </a>
+                        </ul>
                     </div>
                     <h2>Kaiara Spencer</h2>
                     <h3>PRODUCT MANAGER</h3>
                 </div>
 
-                <div class="col-md-3 profile text-cente">
+                <div class="col-md-3 profile ">
                     <div class="team-img-box">
                         <img src="images/person_6.jpg" height="300px" alt="person_6 ">
-
+                        <ul>
+                            <a href="#">
+                                <li><i class="fab fa-facebook-f"></i></li>
+                            </a>
+                            <a href="#">
+                                <li><i class="fab fa-twitter"></i></li>
+                            </a>
+                            <a href="#">
+                                <li><i class="fab fa-linkedin"></i></li>
+                            </a>
+                            <a href="#">
+                                <li><i class="fab fa-instagram"></i></li>
+                            </a>
+                        </ul>
                     </div>
                     <h2>Dave Simpson</h2>
                     <h3>PRODUCT MANAGER</h3>
                 </div>
 
-                <div class="col-md-3 profile text-center">
+                <div class="col-md-3 profile r">
                     <div class="team-img-box">
                         <img src="images/person_7.jpg" height="300px" alt="person_7 ">
-
+                        <ul>
+                            <a href="#">
+                                <li><i class="fab fa-facebook-f"></i></li>
+                            </a>
+                            <a href="#">
+                                <li><i class="fab fa-twitter"></i></li>
+                            </a>
+                            <a href="#">
+                                <li><i class="fab fa-linkedin"></i></li>
+                            </a>
+                            <a href="#">
+                                <li><i class="fab fa-instagram"></i></li>
+                            </a>
+                        </ul>
                     </div>
                     <h2>Ben Thompson</h2>
                     <h3>PRODUCT MANAGER</h3>
                 </div>
 
-                <div class="col-md-3 profile text-center">
+                <div class="col-md-3 profile r">
                     <div class="team-img-box">
                         <img src="images/person_8.jpg" height="300px" alt="person_8 ">
-
+                        <ul>
+                            <a href="#">
+                                <li><i class="fab fa-facebook-f"></i></li>
+                            </a>
+                            <a href="#">
+                                <li><i class="fab fa-twitter"></i></li>
+                            </a>
+                            <a href="#">
+                                <li><i class="fab fa-linkedin"></i></li>
+                            </a>
+                            <a href="#">
+                                <li><i class="fab fa-instagram"></i></li>
+                            </a>
+                        </ul>
                     </div>
                     <h2>Kyla Stewart</h2>
                     <h3>PRODUCT MANAGER</h3>
                 </div>
 
-                <div class="col-md-3  profile text-cente">
+                <div class="col-md-3  profile ">
                     <div class="team-img-box">
                         <img src="images/person_1.jpg" height="300px" alt="person_1 ">
-
+                        <ul>
+                            <a href="#">
+                                <li><i class="fab fa-facebook-f"></i></li>
+                            </a>
+                            <a href="#">
+                                <li><i class="fab fa-twitter"></i></li>
+                            </a>
+                            <a href="#">
+                                <li><i class="fab fa-linkedin"></i></li>
+                            </a>
+                            <a href="#">
+                                <li><i class="fab fa-instagram"></i></li>
+                            </a>
+                        </ul>
                     </div>
                     <h2>Kaiara Spencer</h2>
                     <h3>PRODUCT MANAGER</h3>
                 </div>
 
-                <div class="col-md-3 profile text-cente">
+                <div class="col-md-3 profile ">
                     <div class="team-img-box">
                         <img src="images/person_2.jpg" height="300px" alt="person_2 ">
-
+                        <ul>
+                            <a href="#">
+                                <li><i class="fab fa-facebook-f"></i></li>
+                            </a>
+                            <a href="#">
+                                <li><i class="fab fa-twitter"></i></li>
+                            </a>
+                            <a href="#">
+                                <li><i class="fab fa-linkedin"></i></li>
+                            </a>
+                            <a href="#">
+                                <li><i class="fab fa-instagram"></i></li>
+                            </a>
+                        </ul>
                     </div>
                     <h2>Dave Simpson</h2>
                     <h3>PRODUCT MANAGER</h3>
                 </div>
 
-                <div class="col-md-3 profile text-center">
+                <div class="col-md-3 profile r">
                     <div class="team-img-box">
                         <img src="images/person_3.jpg" height="300px" alt="person_3 ">
-
+                        <ul>
+                            <a href="#">
+                                <li><i class="fab fa-facebook-f"></i></li>
+                            </a>
+                            <a href="#">
+                                <li><i class="fab fa-twitter"></i></li>
+                            </a>
+                            <a href="#">
+                                <li><i class="fab fa-linkedin"></i></li>
+                            </a>
+                            <a href="#">
+                                <li><i class="fab fa-instagram"></i></li>
+                            </a>
+                        </ul>
                     </div>
                     <h2>Ben Thompson</h2>
                     <h3>PRODUCT MANAGER</h3>
                 </div>
 
-                <div class="col-md-3 profile text-center">
+                <div class="col-md-3 profile r">
                     <div class="team-img-box">
                         <img src="images/person_4.jpg" height="300px" alt="person_4 ">
-
+                        <ul>
+                            <a href="#">
+                                <li><i class="fab fa-facebook-f"></i></li>
+                            </a>
+                            <a href="#">
+                                <li><i class="fab fa-twitter"></i></li>
+                            </a>
+                            <a href="#">
+                                <li><i class="fab fa-linkedin"></i></li>
+                            </a>
+                            <a href="#">
+                                <li><i class="fab fa-instagram"></i></li>
+                            </a>
+                        </ul>
                     </div>
                     <h2>Kyla Stewart</h2>
                     <h3>PRODUCT MANAGER</h3>
@@ -155,7 +276,7 @@ pricing line text decoration -->
         </div>
     </section>
 
-    <section class="portfolio">
+    <section class="portfolio" id="nav-portfolio">
         <div class="containerr snipcss-Th2bo">
             <div class="row mb-3">
                 <div class="col-12 text-center aos-init aos-animate" data-aos="fade">
@@ -169,7 +290,7 @@ pricing line text decoration -->
                     <button class="btnn btn-primary active" data-filter="*">
                         All
                     </button>
-                    <button class="btnn btn-primary" data-filter=".web">
+                    <!-- <button class="btnn btn-primary" data-filter=".web">
                         Web
                     </button>
                     <button class="btnn btn-primary" data-filter=".design">
@@ -177,7 +298,7 @@ pricing line text decoration -->
                     </button>
                     <button class="btnn btn-primary" data-filter=".brand">
                         Brand
-                    </button>
+                    </button> -->
                 </div>
             </div>
             <div id="posts" class="row no-gutter style-vakj8">
@@ -185,123 +306,120 @@ pricing line text decoration -->
                     <a href="images/img_1.jpg" class="item-wrap fancybox" data-fancybox="gallery2">
                         <span class="icon-search2">
                         </span>
-                        <img class="img-fluid" src="https://preview.colorlib.com/theme/oneder/images/img_1.jpg">
+                        <img class="img-fluid" src="images/img_1.jpg">
                     </a>
                 </div>
                 <div class="item web col-sm-6 col-md-4 col-lg-4 col-xl-3 mb-4 style-N1zRn" id="style-N1zRn">
                     <a href="images/img_2.jpg" class="item-wrap fancybox" data-fancybox="gallery2">
                         <span class="icon-search2">
                         </span>
-                        <img class="img-fluid" src="https://preview.colorlib.com/theme/oneder/images/img_2.jpg">
+                        <img class="img-fluid" src="images/img_2.jpg">
                     </a>
                 </div>
                 <div class="item brand col-sm-6 col-md-4 col-lg-4 col-xl-3 mb-4 style-rgZYk" id="style-rgZYk">
                     <a href="images/img_3.jpg" class="item-wrap fancybox" data-fancybox="gallery2">
                         <span class="icon-search2">
                         </span>
-                        <img class="img-fluid" src="https://preview.colorlib.com/theme/oneder/images/img_3.jpg">
+                        <img class="img-fluid" src="images/img_3.jpg">
                     </a>
                 </div>
                 <div class="item design col-sm-6 col-md-4 col-lg-4 col-xl-3 mb-4 style-HZsoj" id="style-HZsoj">
                     <a href="images/img_4.jpg" class="item-wrap fancybox" data-fancybox="gallery2">
                         <span class="icon-search2">
                         </span>
-                        <img class="img-fluid" src="https://preview.colorlib.com/theme/oneder/images/img_4.jpg">
+                        <img class="img-fluid" src="images/img_4.jpg">
                     </a>
                 </div>
                 <div class="item web col-sm-6 col-md-4 col-lg-4 col-xl-3 mb-4 style-nSv18" id="style-nSv18">
                     <a href="images/img_5.jpg" class="item-wrap fancybox" data-fancybox="gallery2">
                         <span class="icon-search2">
                         </span>
-                        <img class="img-fluid" src="https://preview.colorlib.com/theme/oneder/images/img_5.jpg">
+                        <img class="img-fluid" src="images/img_5.jpg">
                     </a>
                 </div>
                 <div class="item brand col-sm-6 col-md-4 col-lg-4 col-xl-3 mb-4 style-kyw4h" id="style-kyw4h">
                     <a href="images/img_6.jpg" class="item-wrap fancybox" data-fancybox="gallery2">
                         <span class="icon-search2">
                         </span>
-                        <img class="img-fluid" src="https://preview.colorlib.com/theme/oneder/images/img_6.jpg">
+                        <img class="img-fluid" src="images/img_6.jpg">
                     </a>
                 </div>
                 <div class="item web col-sm-6 col-md-4 col-lg-4 col-xl-3 mb-4 style-hpqZB" id="style-hpqZB">
                     <a href="images/img_7.jpg" class="item-wrap fancybox" data-fancybox="gallery2">
                         <span class="icon-search2">
                         </span>
-                        <img class="img-fluid" src="https://preview.colorlib.com/theme/oneder/images/img_7.jpg">
+                        <img class="img-fluid" src="images/img_7.jpg">
                     </a>
                 </div>
                 <div class="item design col-sm-6 col-md-4 col-lg-4 col-xl-3 mb-4 style-VZZmp" id="style-VZZmp">
                     <a href="images/img_8.jpg" class="item-wrap fancybox" data-fancybox="gallery2">
                         <span class="icon-search2">
                         </span>
-                        <img class="img-fluid" src="https://preview.colorlib.com/theme/oneder/images/img_8.jpg">
+                        <img class="img-fluid" src="images/img_8.jpg">
                     </a>
                 </div>
                 <div class="item web col-sm-6 col-md-4 col-lg-4 col-xl-3 mb-4 style-HTzrK" id="style-HTzrK">
                     <a href="images/img_9.jpg" class="item-wrap fancybox" data-fancybox="gallery2">
                         <span class="icon-search2">
                         </span>
-                        <img class="img-fluid" src="https://preview.colorlib.com/theme/oneder/images/img_9.jpg">
+                        <img class="img-fluid" src="images/img_9.jpg">
                     </a>
                 </div>
                 <div class="item design col-sm-6 col-md-4 col-lg-4 col-xl-3 mb-4 style-aqz15" id="style-aqz15">
                     <a href="images/img_10.jpg" class="item-wrap fancybox" data-fancybox="gallery2">
                         <span class="icon-search2">
                         </span>
-                        <img class="img-fluid" src="https://preview.colorlib.com/theme/oneder/images/img_10.jpg">
+                        <img class="img-fluid" src="images/img_10.jpg">
                     </a>
                 </div>
                 <div class="item brand col-sm-6 col-md-4 col-lg-4 col-xl-3 mb-4 style-AhYt5" id="style-AhYt5">
                     <a href="images/img_11.jpg" class="item-wrap fancybox" data-fancybox="gallery2">
                         <span class="icon-search2">
                         </span>
-                        <img class="img-fluid" src="https://preview.colorlib.com/theme/oneder/images/img_11.jpg">
+                        <img class="img-fluid" src="images/img_11.jpg">
                     </a>
                 </div>
                 <div class="item design col-sm-6 col-md-4 col-lg-4 col-xl-3 mb-4 style-D5Jtg" id="style-D5Jtg">
                     <a href="images/img_12.jpg" class="item-wrap fancybox" data-fancybox="gallery2">
                         <span class="icon-search2">
                         </span>
-                        <img class="img-fluid" src="https://preview.colorlib.com/theme/oneder/images/img_12.jpg">
+                        <img class="img-fluid" src="images/img_12.jpg">
                     </a>
                 </div>
                 <div class="item web col-sm-6 col-md-4 col-lg-4 col-xl-3 mb-4 style-zH6sE" id="style-zH6sE">
                     <a href="images/img_13.jpg" class="item-wrap fancybox" data-fancybox="gallery2">
                         <span class="icon-search2">
                         </span>
-                        <img class="img-fluid" src="https://preview.colorlib.com/theme/oneder/images/img_13.jpg">
+                        <img class="img-fluid" src="images/img_13.jpg">
                     </a>
                 </div>
             </div>
         </div>
-
-
-
     </section>
 
-    <section class="our-services">
+    <section class="our-services" id="nav-services">
         <div class="about-heading">
             <h1>Our Services</h1>
         </div>
         <div class="service">
-            <i class="fa fa-rocket" aria-hidden="true"></i>
-            <img src="images/R.png" alt="service image" width="35px">
+            <i class="fa fa-rocket  fa-ser" aria-hidden="true"></i>
+
             <h2>Business Consulting</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae eligendi at.
             </p>
             <a href="#">Learn More</a>
         </div>
         <div class="service">
-            <i class="fa fa-rocket" aria-hidden="true"></i>
-            <img src="images/R.png" alt="service image" width="35px">
+            <i class="fa fa-desktop fa-ser" aria-hidden="true"></i>
+
             <h2>Market Analysis</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae eligendi at.
             </p>
             <a href="#">Learn More</a>
         </div>
         <div class="service">
-            <i class="fa fa-rocket" aria-hidden="true"></i>
-            <img src="images/R.png" alt="service image" width="35px">
+            <i class="fa fa-user  fa-ser" aria-hidden="true"></i>
+
             <h2>User Monitoring</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae eligendi at.
             </p>
@@ -309,24 +427,25 @@ pricing line text decoration -->
         </div>
         <br>
         <div class="service">
-            <i class="fa fa-rocket" aria-hidden="true"></i>
-            <img src="images/R.png" alt="service image" width="35px">
+            <i class="fa fa-bullhorn fa-ser" aria-hidden="true"></i>
+
+
             <h2>BInsurance Consulting</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae eligendi at.
             </p>
             <a href="#">Learn More</a>
         </div>
         <div class="service">
-            <i class="fa fa-rocket" aria-hidden="true"></i>
-            <img src="images/R.png" alt="service image" width="35px">
+            <i class="fa fa-indent  fa-ser" aria-hidden="true"></i>
+
             <h2>Financial Investment</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae eligendi at.
             </p>
             <a href="#">Learn More</a>
         </div>
         <div class="service">
-            <i class="fa fa-rocket" aria-hidden="true"></i>
-            <img src="images/R.png" alt="service image" width="35px">
+            <i class="fa fa-balance-scale  fa-ser" aria-hidden="true"></i>
+
             <h2>Financial Management</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae eligendi at.
             </p>
@@ -334,27 +453,27 @@ pricing line text decoration -->
         </div>
         <br>
 
-            <div class="service" id="service-last">
-                <i class="fa fa-rocket" aria-hidden="true"></i>
-                <img src="images/R.png" alt="service image" width="35px">
-                <h2>Web & Mobile Specialtiest</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae eligendi
-                    at.
-                </p>
-                <a href="#">Learn More</a>
-            </div>
+        <div class="service" id="service-last">
+            <i class="fa fa-desktop fa-ser" aria-hidden="true"></i>
 
-            <div class="service" id="service-last">
-                <i class="fa fa-rocket" aria-hidden="true"></i>
-                <img src="images/R.png" alt="service image" width="35px">
-                <h2>Intuitive Thinkers</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae eligendi
-                    at.
-                </p>
-                <a href="#">Learn More</a>
-            </div>
-  
-        <div class="service" id="oser" >
+            <h2>Web & Mobile Specialtiest</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae eligendi
+                at.
+            </p>
+            <a href="#">Learn More</a>
+        </div>
+
+        <div class="service" id="service-last">
+
+            <i class="fa fa-mobile fa-ser" aria-hidden="true"></i>
+            <h2>Intuitive Thinkers</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis molestiae vitae eligendi
+                at.
+            </p>
+            <a href="#">Learn More</a>
+        </div>
+
+        <div class="service" id="oser">
 
             <img src="images/hero_1.jpg" alt="service image" width="340px">
 
@@ -362,7 +481,7 @@ pricing line text decoration -->
 
     </section>
 
-    <section class="Testimonials">
+    <section class="Testimonials" id="nav-testimonials">
         <div class="about-heading">
             <h1>Testimonials</h1>
         </div>
@@ -393,7 +512,7 @@ pricing line text decoration -->
 
     </section>
 
-    <section class="pricing">
+    <section class="pricing" id="nav-pricing">
         <div class="price-container">
             <div class="about-heading">
                 <h1>pricing</h1>
@@ -403,50 +522,50 @@ pricing line text decoration -->
                     <h2>Basic</h2>
                     <h3>$47 <span> / year </span></h3>
                     <ul>
-                        <li>**Officia quaerat eaque neque</li>
-                        <li>**Possimus aut consequuntur incidunt</li>
+                        <li><i class="fa fa-check" aria-hidden="true"></i>Officia quaerat eaque neque</li>
+                        <li><i class="fa fa-check" aria-hidden="true"></i>Possimus aut consequuntur incidunt</li>
                         <div class="line">
-                            <li>**Lorem ipsum dolor sit amet</li>
-                            <li>**Consectetur adipisicing elit</li>
-                            <li>**Dolorum esse odio quas architecto sint</li>
+                            <li><i class="fa fa-check" aria-hidden="true"></i>Lorem ipsum dolor sit amet</li>
+                            <li><i class="fa fa-check" aria-hidden="true"></i>Consectetur adipisicing elit</li>
+                            <li><i class="fa fa-check" aria-hidden="true"></i>Dolorum esse odio quas architecto</li>
                         </div>
                     </ul>
-                    <button>Buy Now</button>
+                    <button><a href="#">Buy Now</a></button>
                 </div>
 
                 <div class="price-col">
                     <h2>Premium</h2>
                     <h3>$200 <span> / year </span></h3>
                     <ul>
-                        <li>**Officia quaerat eaque neque</li>
-                        <li>**Possimus aut consequuntur incidunt</li>
-                        <li>**Lorem ipsum dolor sit amet</li>
-                        <li>**Consectetur adipisicing elit</li>
+                        <li><i class="fa fa-check" aria-hidden="true"></i>Officia quaerat eaque neque</li>
+                        <li><i class="fa fa-check" aria-hidden="true"></i>Possimus aut consequuntur incidunt</li>
+                        <li><i class="fa fa-check" aria-hidden="true"></i>Lorem ipsum dolor sit amet</li>
+                        <li><i class="fa fa-check" aria-hidden="true"></i>Consectetur adipisicing elit</li>
                         <div class="line">
-                            <li>**Dolorum esse odio quas architecto sint</li>
+                            <li><i class="fa fa-check" aria-hidden="true"></i>Dolorum esse odio quas architecto</li>
                         </div>
                     </ul>
-                    <button>Buy Now</button>
+                    <button><a href="#">Buy Now</a></button>
                 </div>
 
                 <div class="price-col">
                     <h2>Professional</h2>
                     <h3>$750 <span> / year </span></h3>
                     <ul>
-                        <li>**Officia quaerat eaque neque</li>
-                        <li>**Possimus aut consequuntur inciduntt</li>
-                        <li>**Possimus aut consequuntur incidunt</li>
-                        <li>**Consectetur adipisicing elit</li>
-                        <li>**Dolorum esse odio quas architecto sint</li>
+                        <li><i class="fa fa-check" aria-hidden="true"></i>Officia quaerat eaque neque</li>
+                        <li><i class="fa fa-check" aria-hidden="true"></i>Possimus aut consequuntur inciduntt</li>
+                        <li><i class="fa fa-check" aria-hidden="true"></i>Possimus aut consequuntur incidunt</li>
+                        <li><i class="fa fa-check" aria-hidden="true"></i>Consectetur adipisicing elit</li>
+                        <li><i class="fa fa-check" aria-hidden="true"></i>Dolorum esse odio quas architecto</li>
                     </ul>
-                    <button>Buy Now</button>
+                    <button><a href="#">Buy Now</a></button>
                 </div>
 
 
             </div>
         </div>
     </section>
-    <section class="faqs">
+    <section class="faqs" id="nav-faqs">
         <div class="about-heading">
             <h1>Frequently Ask Questionss</h1>
         </div>
@@ -503,13 +622,13 @@ pricing line text decoration -->
         </div>
     </section>
 
-    <section class="blog">
+    <section class="blog" id="nav-blog">
         <div class="about-heading">
             <h1>Our Blog</h1>
         </div>
         <div class="blog-all">
             <div class="blog-col">
-                <img src="images/img_1.jpg" alt="img_1" width="300px">
+                <img src="images/img_1.jpg" alt="img_1" width="300px" height="300px">
                 <h3>Repudiandae Quisquam Eaque Dolore</h3>
                 <p id="blog-p">Ham Brook • Jan 18, 2019 • <span> News </span></p>
                 <p id="blog-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus eligendi nobis ea
@@ -520,7 +639,7 @@ pricing line text decoration -->
                 </a>
             </div>
             <div class="blog-col">
-                <img src="images/img_1.jpg" alt="img_1" width="300px">
+                <img src="images/img_2.jpg" alt="img_1" width="300px" height="300px">
                 <h3>Repudiandae Quisquam Eaque Dolore</h3>
                 <p id="blog-p">Ham Brook • Jan 18, 2019 • <span> News </span></p>
                 <p id="blog-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus eligendi nobis ea
@@ -531,7 +650,7 @@ pricing line text decoration -->
                 </a>
             </div>
             <div class="blog-col">
-                <img src="images/img_1.jpg" alt="img_1" width="300px">
+                <img src="images/img_3.jpg" alt="img_1" width="300px" height="300px">
                 <h3>Repudiandae Quisquam Eaque Dolore</h3>
                 <p id="blog-p">Ham Brook • Jan 18, 2019 •<span> News </span></p>
                 <p id="blog-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus eligendi nobis ea
@@ -544,25 +663,28 @@ pricing line text decoration -->
         </div>
     </section>
 
-    <section class="contact-us">
+    <section class="contact-us" id="nav-contact">
         <div class="about-heading">
             <h1>Contact Us</h1>
         </div>
         <div class="contactn">
             <div class="contact-content">
-                <img src="images/R.png" width="30px">
+                <!-- <img src="images/R.png" width="30px"> -->
+                <i class="fa fa-map-marker"></i>
                 <p>203 Fake St. Mountain View, California, USA</p>
 
             </div>
 
             <div class="contact-content">
-                <img src="images/R.png" width="30px">
+                <!-- <img src="images/R.png" width="30px"> -->
+                <i class="fa fa-phone" aria-hidden="true"></i>
                 <p class="blue">+1 232 3235 324</p>
             </div>
 
             <div class="contact-content">
-                <img src="images/R.png" width="30px">
-                <p class="blue">[Email Protected]</p>
+                <!-- <img src="images/R.png" width="30px"> -->
+                <i class="fa fa-envelope" aria-hidden="true"></i>
+                <p class="blue">yourname@gmail.com</p>
             </div>
 
         </div>
@@ -641,10 +763,9 @@ pricing line text decoration -->
         </div>
 
         <div class="footer-copyright">
-            <p>Copyright &copy; 2023 All rights reserved | This template is made with by Colorlib</p>
+            <p>Copyright &copy; 2023 All rights reserved | This template is made with ❤️ by Colorlib</p>
         </div>
     </footer>
-
 
 </body>
 
